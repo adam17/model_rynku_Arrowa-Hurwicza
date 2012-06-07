@@ -1,8 +1,8 @@
-examples = start.tex
-
 all: 
-	pdflatex $(examples)
-	pdflatex $(examples)
+	for i in start info; do \
+		pdflatex $$i.tex; \
+	done
+
 	rm -f *.aux *.log *.nav *.out *.snm *.toc *.vrb
 
 clean:
