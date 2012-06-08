@@ -200,12 +200,13 @@
 
 	\end{description}
 	
+	\begin{block}{}
 	\begin{center}
-	\alert{,,Popyt na towar oferowany za darmo\\ zawsze przekracza
-	jego podaż.''}
+	Popyt na towar oferowany za darmo\\ zawsze przekracza
+	jego podaż
 	\end{center}
-	\[ \forall_i (p_i=0 \rightarrow z_i (p) > 0). \]
-
+	\[ \forall_i (p_i=0 \Rightarrow z_i (p) > 0). \]
+	\end{block}
       \end{frame}
 
     \subsection{Rynek w równowadze}
@@ -218,8 +219,15 @@
 	  \[ z(\overline{p}) = 0. \]
 	\end{block}
 
-	Wektor $\overline{p}$ nazywamy \textbf{wektorem cen równowagi}.
+	Wektor $\overline{p}$ nazywamy \textbf{wektorem cen równowagi}.\\
+
+	\vskip10pt
+	Równowagę na rynku utożsamiamy z taką sytuacją, kiedy popyt na towary
+	zostaje zrównoważony przez ich podaż, a każdy z uczestników wymiany
+	opuszcza rynek w przekonaniu, że przy tych cenach, które ostatecznie się
+	ustaliły, dokonał najkorzystniejszego zakupu towarów.
     \end{frame}
+
     \subsection{Jeden dodatni wektor cen równowagi rynkowej}
       \begin{frame}{Jeden dodatni wektor cen równowagi rynkowej}
 	Założenia:
@@ -229,8 +237,12 @@
 
 	  \item[(II)] $\forall_i (p_i = 0 \rightarrow z_i (p) > 0$,
 
-	  \item[(III)] Macierz funkcyjna $J(p) = (\frac{a}{b})_{(n, n)}$
-	  uzupełnić BRAKUJE
+	  \item[(III)] Macierz funkcyjna $J(p) = (\frac{\partial z_i}{\partial
+	  p_j})_{(n, n)}$ spełnia warunek
+	    $$\forall_{\lambda \in R^n \backslash (R^n_{+} \cup R^n_{-})}, \forall_{p \in
+	    \text{int }P^n_{+}(1)} (\lambda J(p) \lambda^T < 0),$$
+	    gdzie $\text{int }P^n_{+}(1) = \{p\in\text{int }R^n_{+}\, \big|\,
+	    ||p||=1 \}$.
 	\end{enumerate}
 
 	\begin{block}{Model Arrowa-Hurwicza}
@@ -243,6 +255,14 @@
     \subsection{Przykład 1}
 
   \section*{Koniec}
+
+    \begin{frame}{Więcej na ten temat}
+      \begin{itemize}
+	\item Emil Panek -- \textit{Ekonomia matematyczna},
+	\item internet.
+      \end{itemize}
+    \end{frame}
+
     \begin{frame}
       \begin{center}
 	Dziękujemy za uwagę.
