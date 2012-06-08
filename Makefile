@@ -4,6 +4,8 @@ all:
 		pdflatex $$i.tex; \
 	done
 
+	xpdf -fullscreen start.pdf
+
 	rm -f *.aux *.log *.nav *.out *.snm *.toc *.vrb
 
 clean:
