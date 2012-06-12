@@ -233,7 +233,7 @@
 	Założenia:
 	\begin{enumerate}
 	  \item[(I)] Funkcje $f^k$ są ciągłe i różniczkowalne na
-	  $\mathbb{R}^n_{+} \ \{0\}$,
+	  $\mathbb{R}^n_{+} \backslash \{0\}$,
 
 	  \item[(II)] $\forall_i (p_i = 0 \rightarrow z_i (p) > 0$,
 
@@ -253,6 +253,49 @@
 
   \section{Przykład}
     \subsection{Przykład 1}
+    \begin{frame}{Przykład 1}
+      Na rynek przybywa $m$ kupców, a przedmiotem wymiany są dwa towary. Funkcja
+      użyteczności $k$-tego kupca ma następującą postać:
+      \[ u^k(x_1, x_2)=a_k \ln x_1 +(1-a_k) \ln x_2, \]
+      $(0 < a_k <1)$, a jego przestrzeń towarów $X^k = R^2_{+}$. Przy cenach
+      $p=(p_1, p_2)$ $k$-ty kupiec rozwiązuje zadanie:
+
+\begin{columns}[t]
+  \column{.45\textwidth}
+      \begin{block}{Zadanie}
+	$ \max \{ a_k \ln x_1 + (1-a_k) \ln x_2 \} $
+      \end{block}
+  \column{.45\textwidth}
+      \begin{block}{wo}
+	$p_1x_1+p_2x_2 \leq I^k(p)$\\
+	$x_1, x_2 \geq 0$.
+      \end{block}
+\end{columns}
+	Gdzie\\
+	$I^k(p)=p_1y_1^k + p_2y_2^k$,\\
+	$y^k=(y^k_1,y^k_2)$ jest wektorem
+	dostarczanych przez niego towarów.
+    \end{frame}
+
+    \begin{frame}{Zadanie c.d.}
+      Rozwiązując \textit{Zadanie 1.}, otrzymujemy funkcję popytu
+      \[ f^k(p) = \left( \frac{a_kI^k(p)}{p_1}, \frac{(1-a_k)I^k(p)}{p_2}.
+      \right) \]
+      Wprowadzając oznaczenia $A = \sum^m_{k=1} a_ky_2^k > 0$, $B= \sum^m_{k=1}
+      (1-a_k)y_1^k > 0$, dochodzimy do funkcji nadmiernego popytu
+
+      \[ z(p) = \left( A\frac{p_2}{p_1}-B, B \frac{p_1}{p_2}-A \right). \]
+
+      Przyrównując do zera prawą stronę $z(p)$, widzimy, że wektory cen
+      równowagi $\overline{p} =( \overline{p}_1, \overline{p}_2)$ są określone
+      jednoznacznie i mają postać
+      
+      \[ \overline{p} = \lambda(A,B), \qquad \lambda > 0. \]
+      \begin{block}{}
+      Zauważmy, że stan równowagi rynkowej istnieje, mimo że funkcje popytu
+      $f^k$ nie spełniają założenia \alert{I}.
+      \end{block}
+    \end{frame}
 
   \section*{Koniec}
 
